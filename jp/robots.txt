@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://alshedivat.github.io/jp/sitemap.xml
+Sitemap: http://localhost:4000/jp/sitemap.xml
