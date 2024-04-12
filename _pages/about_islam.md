@@ -1,9 +1,7 @@
 {% if site.lang == 'en' %}
-<!--
 #### Dr. Mahfuzul Islam
 
-##### Associate Professor, Principal Investigator
--->
+##### Associate Professor, Group Leader
 
 Dr. Islam received a B.E. degree in electrical and electronic engineering in 2009, 
 an M.E. degree in communications and computer engineering in 2011, and a Ph.D. degree in Informatics in 2014, 
@@ -22,9 +20,11 @@ He is a member of IEEE, IEICE, and IPSJ.
 {% endif %}
 
 {% if site.lang == 'jp' %}
+<!--
 #### イスラム マーフズル，博士（情報学）
 
 ##### 准教授， 研究グループリーダ
+-->
 
 Dr. Islam received a B.E. degree in electrical and electronic engineering in 2009, 
 an M.E. degree in communications and computer engineering in 2011, and a Ph.D. degree in Informatics in 2014, 
