@@ -1,10 +1,8 @@
 {% if site.lang == 'en' %}
-#### Dr. Mahfuzul Islam
-
-##### Associate Professor, Group Leader
-##### Room 416, South building 3
-##### islam.aa@m
-##### Tel: 03-5734-3030
+**Dr. Mahfuzul Islam**<br>
+Associate Professor, Group Leader<br>
+Room 416, South building 3<br>
+E-mail: islam.aa@m, Tel: +81-3-5734-3030
 
 Dr. Islam received a B.E. degree in electrical and electronic engineering in 2009, 
 an M.E. degree in communications and computer engineering in 2011, and a Ph.D. degree in Informatics in 2014, 
@@ -23,12 +21,10 @@ He is a member of IEEE, IEICE, and IPSJ.
 {% endif %}
 
 {% if site.lang == 'jp' %}
-#### イスラム マーフズル，博士（情報学）
-
-##### 准教授， 研究グループリーダ
-##### 南3号館416号室
-##### islam.aa@m
-##### Tel: 03-5734-3030
+**イスラム マーフズル，博士**<br>
+准教授， グループリーダ<br>
+南3号館416号室<br>
+E-mail: islam.aa@m, Tel: 03-5734-3030
 
 Dr. Islam received a B.E. degree in electrical and electronic engineering in 2009, 
 an M.E. degree in communications and computer engineering in 2011, and a Ph.D. degree in Informatics in 2014, 
