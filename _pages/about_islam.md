@@ -4,6 +4,7 @@ Associate Professor<br>
 Room 416, South building 3<br>
 E-mail: *islam.aa@m*, Tel: +81-3-5734-3030
 
+<!--
 Dr. Islam received a B.E. degree in electrical and electronic engineering in 2009, 
 an M.E. degree in communications and computer engineering in 2011, and a Ph.D. degree in Informatics in 2014, 
 all from Kyoto University, Kyoto, Japan. 
@@ -17,6 +18,7 @@ and the Student Design Award at A-SSCC'2013.
 Dr. Islam received several prestigious awards, such as the IPSJ Computer Science Award for Young Researchers 
 and IEEE CEDA All Japan Joint Chapter Academic Research Award. 
 He is a member of IEEE, IEICE, and IPSJ.
+-->
 
 {% endif %}
 
@@ -24,8 +26,9 @@ He is a member of IEEE, IEICE, and IPSJ.
 **[イスラム マーフズル](/jp/cv/)**<br>
 准教授<br>
 南3号館416号室<br>
-E-mail: islam.aa@m, Tel: 03-5734-3030
+E-mail: *islam.aa@m*, Tel: 03-5734-3030
 
+<!--
 Dr. Islam received a B.E. degree in electrical and electronic engineering in 2009, 
 an M.E. degree in communications and computer engineering in 2011, and a Ph.D. degree in Informatics in 2014, 
 all from Kyoto University, Kyoto, Japan. 
@@ -39,5 +42,6 @@ and the Student Design Award at A-SSCC'2013.
 Dr. Islam received several prestigious awards, such as the IPSJ Computer Science Award for Young Researchers 
 and IEEE CEDA All Japan Joint Chapter Academic Research Award. 
 He is a member of IEEE, IEICE, and IPSJ.
+-->
 
 {% endif %}
