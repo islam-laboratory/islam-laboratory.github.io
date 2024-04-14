@@ -2,7 +2,7 @@
 **Reiko Shimura**<br>
 Secretary (Mainly working at Takahashi Lak)<br>
 South building 3<br>
-E-mail: shimura.r.aa@m, Tel: +81-3-5734-2565
+E-mail: *shimura.r.aa@m*, Tel: +81-3-5734-2565
 
 {% endif %}
 
