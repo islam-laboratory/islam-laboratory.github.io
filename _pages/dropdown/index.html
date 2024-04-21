@@ -80,6 +80,16 @@
 
   <!-- Body -->
   <body class="fixed-top-nav ">
+	<script type="text/javascript">
+	(function(window, document, dataLayerName, id) {
+	window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+	function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString();f="; SameSite=Strict"}document.cookie=a+"="+b+d+f+"; path=/"}
+	var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+	var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+	tags.async=!0,tags.src="https://cas.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+	!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+	})(window, document, 'dataLayer', '4e7d8bdb-0947-485f-837a-1e86f2dc55f6');
+	</script>
     <!-- Header -->
     <header>
   <!-- Nav Bar -->
@@ -116,10 +126,6 @@
 
           <!-- Other pages -->
           
-          
-            
-          
-            
           
             
           
@@ -187,12 +193,14 @@
               
                 <li class="nav-item ">
                   
-                  <a class="nav-link" href="/blog/">
-                    Blog
+                  <a class="nav-link" href="/news/">
+                    News
                     
                   </a>
                 </li>
               
+            
+          
             
           
             
@@ -211,36 +219,16 @@
           
             
               
-                
-                
-                <li class="nav-item dropdown active">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Others
-                    
-                      <span class="sr-only">(current)</span>
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/access/">
+                    Access
                     
                   </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    
-                      
-                        <a class="dropdown-item " href="/access/">
-                          Access
-                        </a>
-                      
-                    
-                      
-                        <div class="dropdown-divider"></div>
-                      
-                    
-                      
-                        <a class="dropdown-item " href="/news/">
-                          News
-                        </a>
-                      
-                    
-                  </div>
                 </li>
               
+            
+          
             
           
             <!-- Toogle language -->
