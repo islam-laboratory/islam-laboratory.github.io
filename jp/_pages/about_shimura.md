@@ -1,6 +1,6 @@
 {% if site.lang == 'en' %}
 **Reiko Shimura**<br>
-Secretary (Mainly working at Takahashi Lak)<br>
+Secretary (Mainly working at Takahashi Lab)<br>
 Room 402, South building 3<br>
 E-mail: *shimura.r.aa@m*, Tel: +81-3-5734-2565
 
