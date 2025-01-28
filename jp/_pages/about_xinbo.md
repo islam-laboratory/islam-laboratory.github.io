@@ -2,7 +2,7 @@
 **Xinbo Huang**<br>
 Exchange student (Master course)<br>
 Room 415, South building 3<br>
-E-mail: *huang.x.dbef@m*<br>
+E-mail: *huang.x.dbef*<br>
 
 {% endif %}
 
@@ -10,6 +10,6 @@ E-mail: *huang.x.dbef@m*<br>
 **Huang Xinbo**<br>
 交換留学生 (修士課程)<br>
 南3号館415号室<br>
-E-mail: *huang.x.dbef@m*<br>
+E-mail: *huang.x.dbef*<br>
 
 {% endif %}

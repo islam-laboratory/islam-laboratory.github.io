@@ -2,7 +2,7 @@
 **Purvi Agarwal**<br>
 Research student<br>
 Room 415, South building 3<br>
-E-mail: *--@m.*<br>
+E-mail: <br>
 
 {% endif %}
 
@@ -10,6 +10,6 @@ E-mail: *--@m.*<br>
 **Agarwal Purvi**<br>
 研究生<br>
 南3号館415号室<br>
-E-mail: *--@m.*<br>
+E-mail: <br>
 
 {% endif %}

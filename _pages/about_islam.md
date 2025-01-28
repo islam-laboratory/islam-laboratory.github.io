@@ -2,7 +2,7 @@
 **[Dr. Mahfuzul Islam](/cv/)**<br>
 Associate Professor<br>
 Room 416, South building 3<br>
-E-mail: *islam.aa@m*, Tel: +81-3-5734-3030
+E-mail: *islam.m.9703*, Tel: +81-3-5734-3030
 
 <!--
 Dr. Islam received a B.E. degree in electrical and electronic engineering in 2009, 
@@ -26,7 +26,7 @@ He is a member of IEEE, IEICE, and IPSJ.
 **[イスラム マーフズル](/jp/cv/)**<br>
 准教授<br>
 南3号館416号室<br>
-E-mail: *islam.aa@m*, Tel: 03-5734-3030
+E-mail: *islam.m.9703*, Tel: 03-5734-3030
 
 <!--
 Dr. Islam received a B.E. degree in electrical and electronic engineering in 2009, 
