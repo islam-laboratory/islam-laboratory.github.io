@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      Paper on-chip true random number generator (TRNG) accepted for IEEE NEWCAS conference. | イスラム研究室
+    
+  
+</title>
+<meta name="author" content="Mahfuzul Islam">
+<meta name="description" content="Advancing knowledge and understanding
+">
+
+  <meta name="keywords" content="adc, digital ldo, dc/dc converter, trng, stochastic computing, sensor, temperature, integrated circuit">
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
+<!-- <link rel="stylesheet" href="/assets/css/mdb.min.css?62a43d1430ddb46fc4886f9d0e3b49b8"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+<!-- Bootstrap Table -->
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%B1&lt;/text&gt;&lt;/svg&gt;">
+
+<link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="http://localhost:4000/news/20250415_paper_on_trng_accepted_at_NEWCAS/">
+
+<!-- Dark Mode -->
+
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script src="/assets/js/theme.js?0afe9f0ae161375728f7bcc5eb5b4ab4"></script>
+
+
+<!-- GeoJSON support via Leaflet -->
+
+
+<!-- diff2html -->
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+	<script type="text/javascript">
+	(function(window, document, dataLayerName, id) {
+	window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+	function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString();f="; SameSite=Strict"}document.cookie=a+"="+b+d+f+"; path=/"}
+	var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+	var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+	tags.async=!0,tags.src="https://cas.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+	!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+	})(window, document, 'dataLayer', '4e7d8bdb-0947-485f-837a-1e86f2dc55f6');
+	</script>
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/jp/">
+          
+              </a><a href="https://www.isct.ac.jp/en" rel="external nofollow noopener" target="_blank">
+                  <img src="/assets/img/logo_isct_vertical.jpg" width="100">
+              </a> 
+            <p style="margin-left:0.3em;margin-top:0.6em;font-size:1.5em">イスラム研究室</p>
+          
+        
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <!-- <a class="nav-link" href="/"> -->
+            <a class="nav-link" href="/jp/">
+              ホーム
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/jp/cv/">
+                    教員紹介
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/jp/people/">
+                    メンバー
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/jp/publications/">
+                    業績
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/jp/projects/">
+                    研究内容
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item active">
+                  
+                  <a class="nav-link" href="/jp/news/">
+                    お知らせ
+                    
+                      <span class="sr-only">(current)</span>
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/jp/recruit/">
+                    募集
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/jp/access/">
+                    アクセス
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            <!-- Toogle language -->
+            <li class="nav-item active">
+              
+                  
+                  <a class="nav-link" href="/news/20250415_paper_on_trng_accepted_at_NEWCAS/"> 🇺🇸EN </a>
+                  
+              
+            </li>
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        
+
+
+
+
+
+
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+        真の乱数生成回路に関する研究成果がIEEEのNEWACAS国際学会にアクセプトされました．
+      
+    </h1>
+    <p class="post-meta">
+      April 15, 2025
+      
+      
+    </p>
+    <p class="post-tags">
+      
+        <i class="fa-solid fa-calendar fa-sm"></i> 2025
+      
+      
+
+      
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      
+<p>CMOS真の乱数生成回路について重要な発明があり，IEEEのNEWCAS国際学会にその成果発表がアクセプトされました．</p>
+
+<p><span id="Huang2025-hm">X. Huang and M. Islam, “High-speed energy-efficient true random number generator using self-compensating comparator,” in <i>IEEE NEWCAS Conference</i>, Jun. 2025, pp. to appear.</span></p>
+
+<p>情報通信機器の普及とともにセキュアな通信がより重要ななってきています．
+セキュアな通信に乱数生成器は必須であるが，真の乱数生成器の実現が難しいため，これまでアルゴリズムに基づいた擬似乱数生成器が搭載されていました．
+擬似乱数生成器は乱数の推定が可能である上に消費電力も大きい．
+真の乱数生成器の実現に最も大きな問題はトランジスタ間の特性ばらつきであり，
+この特性ばらつきの補償に多大なリソースが必要でした．
+我々は，特性ばらつきの影響を相殺するような現象を発見し，世界最小の面積で最もエネルギー効率の高い乱数生成回路の実現に成功しました．
+我々の発見は今後のセキュアな通信とセキュアコンピューティングの分野を大きく誘導すると考えています．</p>
+
+
+    </div>
+  </article>
+
+  
+
+  
+    
+  
+
+  
+  
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      © Copyright 2025
+      Mahfuzul
+      
+      Islam. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+
+      
+      
+        Last updated: May 17, 2025.
+      
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="/assets/js/mdb.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    
+  <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+<!-- Bootstrap Table -->
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?2930004b8d7fcd0a8e00fdcfc8fc9f24"></script>
+<script defer src="/assets/js/common.js?60f17826041c38835ae7b488b8e87154"></script>
+<script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+
+    
+  <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams',
+      },
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+
+
+    
+
+
+    
+  <!-- Scrolling Progress Bar -->
+  <script type="text/javascript">
+    /*
+     * This JavaScript code has been adapted from the article
+     * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar,
+     * published on the website https://css-tricks.com on the 7th of May, 2014.
+     * Couple of changes were made to the original code to make it compatible
+     * with the `al-foio` theme.
+     */
+    const progressBar = $('#progress');
+    /*
+     * We set up the bar after all elements are done loading.
+     * In some cases, if the images in the page are larger than the intended
+     * size they'll have on the page, they'll be resized via CSS to accomodate
+     * the desired size. This mistake, however, breaks the computations as the
+     * scroll size is computed as soon as the elements finish loading.
+     * To account for this, a minimal delay was introduced before computing the
+     * values.
+     */
+    window.onload = function () {
+      setTimeout(progressBarSetup, 50);
+    };
+    /*
+     * We set up the bar according to the browser.
+     * If the browser supports the progress element we use that.
+     * Otherwise, we resize the bar thru CSS styling
+     */
+    function progressBarSetup() {
+      if ('max' in document.createElement('progress')) {
+        initializeProgressElement();
+        $(document).on('scroll', function () {
+          progressBar.attr({ value: getCurrentScrollPosition() });
+        });
+        $(window).on('resize', initializeProgressElement);
+      } else {
+        resizeProgressBar();
+        $(document).on('scroll', resizeProgressBar);
+        $(window).on('resize', resizeProgressBar);
+      }
+    }
+    /*
+     * The vertical scroll position is the same as the number of pixels that
+     * are hidden from view above the scrollable area. Thus, a value > 0 is
+     * how much the user has scrolled from the top
+     */
+    function getCurrentScrollPosition() {
+      return $(window).scrollTop();
+    }
+
+    function initializeProgressElement() {
+      let navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      progressBar.css({ top: navbarHeight });
+      progressBar.attr({
+        max: getDistanceToScroll(),
+        value: getCurrentScrollPosition(),
+      });
+    }
+    /*
+     * The offset between the html document height and the browser viewport
+     * height will be greater than zero if vertical scroll is possible.
+     * This is the distance the user can scroll
+     */
+    function getDistanceToScroll() {
+      return $(document).height() - $(window).height();
+    }
+
+    function resizeProgressBar() {
+      progressBar.css({ width: getWidthPercentage() + '%' });
+    }
+    // The scroll ratio equals the percentage to resize the bar
+    function getWidthPercentage() {
+      return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+    }
+  </script>
+
+
+    
+
+    
+
+  </body>
+</html>
