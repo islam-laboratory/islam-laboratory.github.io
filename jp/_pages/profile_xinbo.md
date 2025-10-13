@@ -1,15 +1,15 @@
 {% if site.lang == 'en' %}
 **Xinbo Huang**<br>
-Exchange student (Master course)<br>
+Doctoral course 1st year<br>
 Room 415, South building 3<br>
-E-mail: *huang.x.dbef*<br>
+E-mail: *xinbo@*<br>
 
 {% endif %}
 
 {% if site.lang == 'jp' %}
 **Huang Xinbo**<br>
-交換留学生 (修士課程)<br>
+博士課程1年<br>
 南3号館415号室<br>
-E-mail: *huang.x.dbef*<br>
+E-mail: *xinbo@*<br>
 
 {% endif %}
