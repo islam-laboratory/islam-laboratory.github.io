@@ -8,7 +8,7 @@ E-mail: *deng@*<br>
 
 {% if site.lang == 'jp' %}
 **鄧 雨濤**<br>
-修士課程1年 (10月入学)<br>
+修士課程2年 (10月入学)<br>
 南3号館415号室<br>
 E-mail: *deng@*<br>
 

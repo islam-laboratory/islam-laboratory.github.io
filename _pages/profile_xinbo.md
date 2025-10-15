@@ -10,6 +10,6 @@ E-mail: *xinbo@*<br>
 **Huang Xinbo**<br>
 博士課程1年<br>
 南3号館415号室<br>
-E-mail: *huang.x.dbef*<br>
+E-mail: *xinbo@*<br>
 
 {% endif %}

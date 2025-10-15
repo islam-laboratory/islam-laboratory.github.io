@@ -10,6 +10,6 @@ E-mail: *ni@*<br>
 **Ni Chien Chia**<br>
 博士課程1年<br>
 南3号館415号室<br>
-E-mail: *ni*<br>
+E-mail: *ni@*<br>
 
 {% endif %}
