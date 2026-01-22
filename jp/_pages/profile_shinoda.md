@@ -1,6 +1,6 @@
 {% if site.lang == 'en' %}
 **Kazuho Shinoda**<br>
-Bachelor course 3th year<br>
+Bachelor course 3rd year<br>
 Room 415, South building 3<br>
 E-mail: *shinoda@*<br>
 {% endif %}
